@@ -1,21 +1,15 @@
-import { Outlet } from 'react-router-dom'
-import Navbar from '../components/Navbar.jsx'
-import Footer from '../components/Footer.jsx'
-import ScrollToTop from '../components/ScrollToTop.jsx'
-import FloatingCta from '../components/FloatingCta.jsx'
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
-const Layout = () => {
+export default function Layout() {
   return (
-    <div className="min-h-screen flex flex-col bg-ink-950">
-      <ScrollToTop />
+    <div className="min-h-screen flex flex-col bg-slate-900 text-white">
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-grow">
         <Outlet />
       </main>
       <Footer />
-      <FloatingCta />
     </div>
-  )
+  );
 }
-
-export default Layout
