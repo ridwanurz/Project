@@ -1,70 +1,30 @@
-# Lentera Kamera — Company Profile
+# Sewa Kamera Bandung
 
-Website company profile untuk **Lentera Kamera**, perusahaan penyewaan kamera profesional.
-Dibangun dengan React 19 + Vite + Tailwind CSS v4 (React Router untuk routing).
+Aplikasi web penyewaan kamera, lensa, dan peralatan sinematografi terpercaya di Bandung. Platform ini dirancang untuk memudahkan kreator konten, fotografer, dan pembuat film menemukan peralatan fotografi berkualitas dengan harga terjangkau.
 
-## Menjalankan Project
+---
 
-```bash
-npm install
-npm run dev      # server pengembangan
-npm run build    # build ke folder dist/
-npm run preview  # preview hasil build
-npm run lint     # eslint
-```
+## Fitur Utama
 
-## Struktur
+* **Katalog Kamera & Equipment**: Informasi lengkap kamera, lensa, dan aksesori beserta spesifikasi & harga sewa harian.
+* **Paket Layanan & Cinema**: Pilihan paket sewa harian, mingguan, hingga layanan operator/kru profesional.
+* **Portofolio Proyek**: Menampilkan riwayat proyek dan klien yang pernah bekerja sama.
+* **Profil Penggerak**: Halaman khusus mengenai visi, misi, dan latar belakang tim.
+* **Desain Responsif**: Tampilan optimal di perangkat desktop maupun smartphone.
 
-```
-src/
-├── components/
-│   ├── CameraArt.jsx      # ilustrasi SVG kamera (10 varian, tanpa file gambar eksternal)
-│   ├── Card.jsx           # permukaan kartu standar
-│   ├── EquipmentCard.jsx  # kartu unit sewa di katalog
-│   ├── FloatingCta.jsx    # tombol WhatsApp mengambang
-│   ├── Footer.jsx
-│   ├── Icon.jsx           # set ikon SVG inline
-│   ├── Navbar.jsx         # navigasi responsif + menu mobile
-│   ├── PageHero.jsx       # hero halaman dalam
-│   ├── ScrollToTop.jsx    # scroll ke atas saat pindah route
-│   └── SectionHeading.jsx
-├── data/
-│   ├── equipment.js       # katalog unit + kategori
-│   ├── packages.js        # paket sewa harian/mingguan/bulanan + add-on
-│   ├── services.js        # layanan & alur kerja
-│   ├── team.js            # profil tim & sejarah perusahaan
-│   └── testimonials.js    # testimoni, daftar klien, galeri
-├── page/
-│   ├── layout.jsx         # navbar + outlet + footer
-│   ├── home.jsx
-│   ├── about.jsx
-│   ├── services.jsx       # katalog + filter + paket + FAQ
-│   ├── portfolio.jsx      # galeri + filter + lightbox
-│   ├── contact.jsx        # form permintaan sewa + validasi
-│   └── notfound.jsx       # 404
-├── App.jsx                # definisi route
-├── index.css              # tema Tailwind v4 + utilitas kustom
-└── main.jsx
-```
+---
 
-## Halaman
+## Teknologi yang Digunakan
 
-| Route | Isi |
-| --- | --- |
-| `/` | Hero, statistik, keunggulan, layanan, katalog, alur kerja, testimoni, CTA |
-| `/about` | Profil perusahaan, visi & misi, nilai, linimasa, profil tim |
-| `/services` | Daftar layanan, katalog 16 unit dengan filter kategori, paket harga, add-on, FAQ |
-| `/portfolio` | Galeri dengan filter + lightbox, studi kasus, daftar klien, testimoni |
-| `/contact` | Info studio, form permintaan sewa (validasi), peta, cepat akses katalog |
-| `*` | Halaman 404 |
+* **Frontend Framework**: React.js
+* **Build Tool**: Vite
+* **Styling**: Tailwind CSS
+* **Routing**: React Router
 
-## Catatan
+---
 
-- Seluruh ilustrasi dibuat sebagai SVG inline (`CameraArt.jsx`) sehingga tidak ada file gambar
-  eksternal yang bisa rusak — tinggal ganti `<CameraArt variant="..." />` dengan `<img>` bila
-  foto asli sudah tersedia.
-- Tema warna & tipografi diatur di `src/index.css` pada blok `@theme` (namespace `ink`, `brand`,
-  `accent`).
-- Dukungan `prefers-reduced-motion` sudah aktif untuk diakses pengguna yang sensitif terhadap
-  animasi.
-- Data klien, harga, dan kontak masih berupa data contoh — ganti isi file di `src/data/`.
+## Cara Menjalankan Proyek di Lokal
+
+1. Clone repository ini:
+   ```bash
+   git clone [https://github.com/username-kamu/nama-repo-kamu.git](https://github.com/username-kamu/nama-repo-kamu.git)
